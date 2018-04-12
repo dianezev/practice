@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Flexbox practice</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<style>
+  
+  .container {
+    display: flex;
+    background-color: gray;
+    color: white;
+    font-size: 24px;
+  }
+
+  .item {
+    margin: auto;  
+    border: 1px solid white;
+    
+  }
+  
+  /*  
+  I think the flex units are essentially the same as using
+  percentages, but a little quicker to modify.
+  (You'll see the widths will stick to these proportions until viewport is too small and then vary depending on content)
+  This should give the middle text 50% of display, or as close as possible without overlapping
+  */
+  .menu {
+    flex: 2;
+    text-align: left;
+  }
+  .middleText {
+    flex: 4;
+    text-align: center;
+  }
+  .stuff3 {
+    flex: 1;
+    text-align: center;
+  }
+  .stuff4 {
+    flex: 1;
+    text-align: right;
+  }
+  
+</style>  
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="item menu">
+      Menu
+    </div>
+    <div class="item middleText">
+      StatusReview
+    </div>
+    <div class="item stuff3">
+      I
+    </div>
+    <div class="item stuff4">
+      Item4
+    </div>
+  </div>
+
+</body>
+</html>
